@@ -1,0 +1,7 @@
+﻿@model Sushi.Models.ViewModels.MenuItemViewModel
+
+<fieldset>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.CheckBoxFor(Model => Model.Selected)
+    @Html.DisplayFor(Model => Model.Name) - @Html.DisplayFor(Model => Model.Description)
+</fieldset>
